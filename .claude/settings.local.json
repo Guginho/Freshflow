@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(npm -v)",
+      "Bash(export PATH=\"/opt/homebrew/bin:$PATH\")",
+      "Bash(npm run *)",
+      "Bash(curl -s -o /tmp/freshflow-home.html -w \"HTTP %{http_code} — %{size_download} bytes — %{time_total}s\\\\n\" http://localhost:3000/)",
+      "Bash(curl -s -o /dev/null -w \"/cgv → HTTP %{http_code}\\\\n\" http://localhost:3000/cgv)",
+      "Bash(curl -s -o /dev/null -w \"/sitemap.xml → HTTP %{http_code}\\\\n\" http://localhost:3000/sitemap.xml)",
+      "Bash(curl -s -o /dev/null -w \"/robots.txt → HTTP %{http_code}\\\\n\" http://localhost:3000/robots.txt)"
+    ]
+  }
+}

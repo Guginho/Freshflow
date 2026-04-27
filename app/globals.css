@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-ink font-sans;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  ::selection {
+    background-color: #2e7d32;
+    color: #ffffff;
+  }
+
+  h1,
+  h2,
+  h3 {
+    @apply tracking-tightest;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .gradient-leaf {
+    background-image: linear-gradient(135deg, #43a047 0%, #2e7d32 100%);
+  }
+
+  .grain-radial {
+    background-image: radial-gradient(
+      ellipse at top,
+      rgba(67, 160, 71, 0.08),
+      transparent 60%
+    );
+  }
+}
+
+@layer components {
+  .prose-legal {
+    @apply text-[15.5px] leading-relaxed text-ink-soft;
+  }
+  .prose-legal h2 {
+    @apply mt-10 mb-3 text-2xl font-extrabold text-ink tracking-tightest;
+  }
+  .prose-legal h3 {
+    @apply mt-6 mb-2 text-lg font-bold text-ink;
+  }
+  .prose-legal p {
+    @apply mb-4;
+  }
+  .prose-legal a {
+    @apply text-brand-green font-medium hover:underline;
+  }
+  .prose-legal ul {
+    @apply mb-4 ml-5 list-disc space-y-1.5;
+  }
+  .prose-legal strong {
+    @apply text-ink font-semibold;
+  }
+}
