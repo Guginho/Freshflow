@@ -11,7 +11,7 @@ export function Footer() {
           <div>
             <Logo variant="white" />
             <p className="mt-4 max-w-sm text-sm text-white/75 leading-relaxed">
-              FreshFlow t'aide à dépenser moins en courses et à arrêter de
+              Saveo t'aide à dépenser moins en courses et à arrêter de
               jeter, sans changer tes habitudes.
             </p>
           </div>
@@ -29,7 +29,7 @@ export function Footer() {
           <div>
             <h4 className="text-sm font-semibold text-white/90">Entreprise</h4>
             <ul className="mt-4 space-y-2.5 text-sm text-white/70">
-              <li><a href="mailto:hello@freshflow.app" className="hover:text-white transition-colors">Nous contacter</a></li>
+              <li><a href="mailto:hello@saveo.app" className="hover:text-white transition-colors">Nous contacter</a></li>
               <li><a href="#beta" className="hover:text-white transition-colors">Rejoindre la bêta</a></li>
             </ul>
           </div>
@@ -46,7 +46,7 @@ export function Footer() {
 
         <div className="mt-12 border-t border-white/10 pt-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-3">
           <p className="text-xs text-white/60">
-            © {YEAR} FreshFlow. Tous droits réservés.
+            © {YEAR} Saveo. Tous droits réservés.
           </p>
           <p className="text-xs text-white/60">
             Conçu pour t'aider à manger mieux, en dépensant moins.

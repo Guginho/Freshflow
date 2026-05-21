@@ -16,7 +16,7 @@
   }
 
   ::selection {
-    background-color: #2e7d32;
+    background-color: #18a34a;
     color: #ffffff;
   }
 
@@ -33,13 +33,13 @@
   }
 
   .gradient-leaf {
-    background-image: linear-gradient(135deg, #43a047 0%, #2e7d32 100%);
+    background-image: linear-gradient(135deg, #22c55e 0%, #166534 100%);
   }
 
   .grain-radial {
     background-image: radial-gradient(
       ellipse at top,
-      rgba(67, 160, 71, 0.08),
+      rgba(24, 163, 74, 0.08),
       transparent 60%
     );
   }

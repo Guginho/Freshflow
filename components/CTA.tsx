@@ -1,5 +1,4 @@
-import { Sparkles } from "lucide-react";
-import { Badge } from "@/components/ui/badge";
+import { ArrowRight, Shield, Zap } from "lucide-react";
 import { EmailForm } from "@/components/EmailForm";
 import { MotionSection } from "@/components/MotionSection";
 
@@ -7,45 +6,69 @@ export function CTA() {
   return (
     <section
       id="beta"
-      className="relative overflow-hidden bg-brand-deep text-white py-20 md:py-28"
+      className="relative overflow-hidden bg-ink py-20 md:py-28"
     >
+      {/* Green glow top */}
       <div
         aria-hidden
-        className="absolute inset-0 opacity-50 pointer-events-none"
+        className="absolute inset-0 opacity-40 pointer-events-none"
         style={{
           background:
-            "radial-gradient(60% 50% at 50% 0%, rgba(67,160,71,0.55), transparent 70%)",
+            "radial-gradient(ellipse 70% 50% at 50% 0%, rgba(24,163,74,0.5), transparent 70%)",
         }}
       />
+      {/* Grid pattern */}
       <div
         aria-hidden
-        className="absolute -bottom-24 -right-24 h-72 w-72 rounded-full pointer-events-none"
+        className="absolute inset-0 opacity-5 pointer-events-none"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(255,255,255,0.2) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.2) 1px, transparent 1px)",
+          backgroundSize: "60px 60px",
+        }}
+      />
+      {/* Orange glow bottom-right */}
+      <div
+        aria-hidden
+        className="absolute -bottom-20 -right-20 h-80 w-80 rounded-full pointer-events-none"
         style={{
           background:
-            "radial-gradient(closest-side, rgba(245,165,36,0.25), transparent)",
+            "radial-gradient(closest-side, rgba(245,158,11,0.2), transparent)",
+          filter: "blur(20px)",
         }}
       />
 
       <div className="container relative">
         <MotionSection className="mx-auto max-w-2xl text-center">
-          <Badge
-            variant="green"
-            className="mb-5 bg-white/10 text-white backdrop-blur"
-          >
-            <Sparkles className="h-3.5 w-3.5" />
+          <span className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-2 text-sm font-semibold text-white/80 backdrop-blur mb-6">
+            <Zap className="h-3.5 w-3.5 text-brand-green" />
             Accès bêta — places limitées
-          </Badge>
+          </span>
 
-          <h2 className="text-balance text-[34px] sm:text-[44px] font-extrabold tracking-tightest leading-[1.05]">
+          <h2 className="text-balance text-[36px] sm:text-[48px] font-extrabold tracking-tightest leading-[1.04] text-white">
             Prêt·e à voir l'argent que tu jettes chaque mois ?
           </h2>
-          <p className="mt-4 text-lg text-white/80">
-            Laisse ton e-mail. On t'envoie ton accès à FreshFlow dès l'ouverture
-            de la bêta — et zéro spam, promis.
+          <p className="mt-5 text-lg text-white/60 max-w-lg mx-auto">
+            Laisse ton e-mail. On t'envoie ton accès dès l'ouverture de la bêta
+            — et zéro spam, promis.
           </p>
 
-          <div className="mt-8 flex justify-center">
+          <div className="mt-10 flex justify-center">
             <EmailForm />
+          </div>
+
+          <div className="mt-8 flex items-center justify-center gap-6 text-sm text-white/40">
+            <span className="flex items-center gap-1.5">
+              <Shield className="h-3.5 w-3.5" />
+              Données sécurisées
+            </span>
+            <span className="h-1 w-1 rounded-full bg-white/20" />
+            <span className="flex items-center gap-1.5">
+              <ArrowRight className="h-3.5 w-3.5" />
+              Aucun engagement
+            </span>
+            <span className="h-1 w-1 rounded-full bg-white/20" />
+            <span>iOS & Android</span>
           </div>
         </MotionSection>
       </div>

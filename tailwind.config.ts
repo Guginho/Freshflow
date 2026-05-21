@@ -21,30 +21,30 @@ const config: Config = {
     extend: {
       colors: {
         brand: {
-          green: "#2E7D32",
-          deep: "#1F5A23",
-          leaf: "#43A047",
-          mint: "#EAF7EC",
-          light: "#F5FBF6",
-          alert: "#FFF4D6",
-          orange: "#F5A524",
+          green: "#18A34A",
+          deep: "#166534",
+          leaf: "#22C55E",
+          mint: "#DCFCE7",
+          light: "#F0FDF4",
+          alert: "#FEF9C3",
+          orange: "#F59E0B",
         },
         ink: {
-          DEFAULT: "#16301A",
-          soft: "#5F7363",
-          mute: "#8AA08E",
+          DEFAULT: "#0A1628",
+          soft: "#4B5563",
+          mute: "#9CA3AF",
         },
         surface: {
           DEFAULT: "#FFFFFF",
-          alt: "#F8FCF8",
+          alt: "#F9FAFB",
         },
-        border: "#DCECDF",
-        ring: "#2E7D32",
+        border: "#E5E7EB",
+        ring: "#18A34A",
         background: "#FFFFFF",
-        foreground: "#16301A",
+        foreground: "#0A1628",
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "ui-sans-serif", "system-ui"],
+        sans: ["var(--font-sans)", "ui-sans-serif", "system-ui"],
       },
       letterSpacing: {
         tightest: "-0.03em",
@@ -55,10 +55,10 @@ const config: Config = {
         sm: "0.5rem",
       },
       boxShadow: {
-        card: "0 1px 2px rgba(22, 48, 26, 0.04), 0 8px 24px rgba(22, 48, 26, 0.06)",
-        cardHover:
-          "0 2px 4px rgba(22, 48, 26, 0.06), 0 16px 40px rgba(22, 48, 26, 0.10)",
-        soft: "0 1px 2px rgba(22, 48, 26, 0.04)",
+        card: "0 1px 3px rgba(10,22,40,0.06), 0 8px 24px rgba(10,22,40,0.07)",
+        cardHover: "0 4px 12px rgba(10,22,40,0.10), 0 20px 40px rgba(10,22,40,0.12)",
+        soft: "0 1px 2px rgba(10,22,40,0.05)",
+        glow: "0 0 40px rgba(24,163,74,0.25)",
       },
       keyframes: {
         "accordion-down": {
@@ -69,10 +69,20 @@ const config: Config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        pulse: {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0.4" },
+        },
+        float: {
+          "0%, 100%": { transform: "translateY(0)" },
+          "50%": { transform: "translateY(-6px)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        pulse: "pulse 2s ease-in-out infinite",
+        float: "float 4s ease-in-out infinite",
       },
     },
   },

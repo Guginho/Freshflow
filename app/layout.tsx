@@ -1,24 +1,24 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
+import { Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
+const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-inter",
+  variable: "--font-sans",
   weight: ["400", "500", "600", "700", "800"],
 });
 
-const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://freshflow.app";
+const SITE_URL = process.env.NEXT_PUBLIC_SITE_URL ?? "https://saveo.app";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "FreshFlow — Moins de gaspillage. Plus d'économies.",
-    template: "%s · FreshFlow",
+    default: "Saveo — Moins de gaspillage. Plus d'économies.",
+    template: "%s · Saveo",
   },
   description:
-    "FreshFlow t'aide à suivre ce que tu as déjà chez toi, à éviter les achats en doublon et à cuisiner avant que tes aliments ne périment.",
+    "Saveo t'aide à suivre ce que tu as déjà chez toi, à éviter les achats en doublon et à cuisiner avant que tes aliments ne périment.",
   keywords: [
     "gaspillage alimentaire",
     "budget courses",
@@ -28,19 +28,19 @@ export const metadata: Metadata = {
     "recettes anti-gaspi",
     "économies courses",
   ],
-  authors: [{ name: "FreshFlow" }],
+  authors: [{ name: "Saveo" }],
   openGraph: {
     type: "website",
     locale: "fr_FR",
     url: SITE_URL,
-    siteName: "FreshFlow",
-    title: "FreshFlow — Moins de gaspillage. Plus d'économies.",
+    siteName: "Saveo",
+    title: "Saveo — Moins de gaspillage. Plus d'économies.",
     description:
       "L'app qui réduit ton budget courses : suivi du frigo, alertes péremption, recettes et économies mesurées.",
   },
   twitter: {
     card: "summary_large_image",
-    title: "FreshFlow — Moins de gaspillage. Plus d'économies.",
+    title: "Saveo — Moins de gaspillage. Plus d'économies.",
     description:
       "L'app qui réduit ton budget courses, sans y penser.",
   },
@@ -66,7 +66,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="fr" className={inter.variable}>
+    <html lang="fr" className={plusJakartaSans.variable}>
       <body>{children}</body>
     </html>
   );

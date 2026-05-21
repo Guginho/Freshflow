@@ -8,8 +8,8 @@ import { MotionSection } from "@/components/MotionSection";
 
 const FAQS = [
   {
-    q: "Comment FreshFlow sait ce qu'il y a dans mon frigo ?",
-    a: "Tu prends ton ticket de caisse en photo après les courses. FreshFlow lit les produits, les ajoute à ton stock et estime leur date de péremption. Tu peux aussi ajouter ou corriger un produit à la main en deux secondes.",
+    q: "Comment Saveo sait ce qu'il y a dans mon frigo ?",
+    a: "Tu prends ton ticket de caisse en photo après les courses. Saveo lit les produits, les ajoute à ton stock et estime leur date de péremption. Tu peux aussi ajouter ou corriger un produit à la main en deux secondes.",
   },
   {
     q: "Mes données et mes tickets sont-ils privés ?",
@@ -17,7 +17,7 @@ const FAQS = [
   },
   {
     q: "Sur quels téléphones ça marche ?",
-    a: "FreshFlow est disponible sur iPhone (iOS 16+) et Android (12+). Pas besoin d'objet connecté ni de balance dans le frigo : ton téléphone suffit.",
+    a: "Saveo est disponible sur iPhone (iOS 16+) et Android (12+). Pas besoin d'objet connecté ni de balance dans le frigo : ton téléphone suffit.",
   },
   {
     q: "Combien je peux vraiment économiser ?",
@@ -45,9 +45,9 @@ export function FAQ() {
             Une question pas dans la liste ? Écris-nous à{" "}
             <a
               className="text-brand-green font-semibold hover:underline"
-              href="mailto:hello@freshflow.app"
+              href="mailto:hello@saveo.app"
             >
-              hello@freshflow.app
+              hello@saveo.app
             </a>
             .
           </p>
