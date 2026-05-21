@@ -42,7 +42,7 @@ export function HeroMockup() {
           {/* top status row */}
           <div className="flex items-center justify-between text-[11px] text-ink-soft px-2 mb-4">
             <span className="font-semibold text-ink">9:41</span>
-            <span className="font-medium">FreshFlow</span>
+            <span className="font-medium">Saveo</span>
             <span>•••</span>
           </div>
 

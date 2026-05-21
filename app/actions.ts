@@ -37,7 +37,7 @@ export async function subscribe(
       audienceId: "28997603-c40a-4493-a401-53b90684abf2",
     });
 
-    console.log("[freshflow:beta-signup]", {
+    console.log("[saveo:beta-signup]", {
       email,
       at: new Date().toISOString(),
     });
@@ -47,7 +47,7 @@ export async function subscribe(
       message: "C'est noté. On t'envoie ton accès dès l'ouverture de la bêta.",
     };
   } catch (error) {
-    console.error("[freshflow:beta-signup-error]", error);
+    console.error("[saveo:beta-signup-error]", error);
     return {
       status: "error",
       message: "Une erreur s'est produite. Réessaie dans un instant.",

@@ -19,7 +19,7 @@ export function Logo({
         "inline-flex items-center gap-2 select-none",
         className,
       )}
-      aria-label="FreshFlow"
+      aria-label="Saveo"
     >
       <svg
         viewBox="0 0 40 40"
@@ -62,7 +62,7 @@ export function Logo({
           className="text-[19px] font-extrabold tracking-tightest"
           style={{ color: tone }}
         >
-          FreshFlow
+          Saveo
         </span>
       )}
     </span>

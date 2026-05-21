@@ -4,7 +4,7 @@ import { LegalShell } from "@/components/LegalShell";
 export const metadata: Metadata = {
   title: "Politique de confidentialité",
   description:
-    "Comment FreshFlow collecte, utilise et protège tes données personnelles.",
+    "Comment Saveo collecte, utilise et protège tes données personnelles.",
   alternates: { canonical: "/confidentialite" },
 };
 
@@ -15,13 +15,13 @@ export default function ConfidentialitePage() {
       updatedAt="27 avril 2026"
     >
       <p>
-        Chez FreshFlow, on pense que tes données t'appartiennent. Voici, en
+        Chez Saveo, on pense que tes données t'appartiennent. Voici, en
         clair, ce qu'on collecte et pourquoi.
       </p>
 
       <h2>1. Responsable du traitement</h2>
       <p>
-        FreshFlow SAS, dont les coordonnées figurent sur la page{" "}
+        Saveo SAS, dont les coordonnées figurent sur la page{" "}
         <a href="/mentions-legales">Mentions légales</a>, est responsable du
         traitement de tes données.
       </p>
@@ -48,7 +48,7 @@ export default function ConfidentialitePage() {
 
       <h2>3. Finalités et bases légales</h2>
       <p>
-        Tes données servent à fournir le service FreshFlow (exécution du
+        Tes données servent à fournir le service Saveo (exécution du
         contrat), à t'informer des évolutions importantes (intérêt légitime)
         et, si tu y consentes, à te tenir informé·e du lancement (consentement).
       </p>
@@ -73,13 +73,13 @@ export default function ConfidentialitePage() {
       <p>
         Tu peux à tout moment accéder, rectifier, exporter ou supprimer tes
         données depuis l'application, ou en écrivant à{" "}
-        <a href="mailto:privacy@freshflow.app">privacy@freshflow.app</a>. Tu
+        <a href="mailto:privacy@saveo.app">privacy@saveo.app</a>. Tu
         peux aussi déposer une réclamation auprès de la CNIL.
       </p>
 
       <h2>7. Cookies</h2>
       <p>
-        Le site freshflow.app utilise uniquement des cookies fonctionnels
+        Le site saveo.app utilise uniquement des cookies fonctionnels
         nécessaires à la navigation. Aucun cookie publicitaire ou de suivi
         tiers n'est déposé sans ton consentement explicite.
       </p>

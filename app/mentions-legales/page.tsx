@@ -4,7 +4,7 @@ import { LegalShell } from "@/components/LegalShell";
 export const metadata: Metadata = {
   title: "Mentions légales",
   description:
-    "Mentions légales de FreshFlow : éditeur, hébergeur et conditions d'utilisation du site.",
+    "Mentions légales de Saveo : éditeur, hébergeur et conditions d'utilisation du site.",
   alternates: { canonical: "/mentions-legales" },
 };
 
@@ -13,16 +13,16 @@ export default function MentionsLegalesPage() {
     <LegalShell title="Mentions légales" updatedAt="27 avril 2026">
       <h2>Éditeur du site</h2>
       <p>
-        Le site freshflow.app est édité par <strong>FreshFlow SAS</strong>,
+        Le site saveo.app est édité par <strong>Saveo SAS</strong>,
         société par actions simplifiée au capital de 1 000 €, immatriculée au
         RCS de Paris sous le numéro 000 000 000, dont le siège social est situé
         à Paris, France.
       </p>
       <ul>
-        <li>Directeur de la publication : la présidente de FreshFlow SAS</li>
+        <li>Directeur de la publication : la présidente de Saveo SAS</li>
         <li>
           Contact :{" "}
-          <a href="mailto:hello@freshflow.app">hello@freshflow.app</a>
+          <a href="mailto:hello@saveo.app">hello@saveo.app</a>
         </li>
       </ul>
 
@@ -35,15 +35,15 @@ export default function MentionsLegalesPage() {
 
       <h2>Propriété intellectuelle</h2>
       <p>
-        L'ensemble des contenus présents sur freshflow.app (textes, images,
-        logos, code) sont la propriété exclusive de FreshFlow SAS, sauf
+        L'ensemble des contenus présents sur saveo.app (textes, images,
+        logos, code) sont la propriété exclusive de Saveo SAS, sauf
         mention contraire. Toute reproduction, représentation ou exploitation
         sans autorisation préalable écrite est interdite.
       </p>
 
       <h2>Responsabilité</h2>
       <p>
-        FreshFlow met tout en œuvre pour fournir des informations exactes et à
+        Saveo met tout en œuvre pour fournir des informations exactes et à
         jour sur ce site, sans toutefois pouvoir garantir l'absence d'erreurs
         ou d'omissions. Les liens vers des sites externes n'engagent que
         leurs éditeurs respectifs.

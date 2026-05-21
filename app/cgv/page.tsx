@@ -4,7 +4,7 @@ import { LegalShell } from "@/components/LegalShell";
 export const metadata: Metadata = {
   title: "Conditions générales de vente",
   description:
-    "Conditions générales de vente des abonnements FreshFlow : tarifs, paiement, résiliation et droit de rétractation.",
+    "Conditions générales de vente des abonnements Saveo : tarifs, paiement, résiliation et droit de rétractation.",
   alternates: { canonical: "/cgv" },
 };
 
@@ -14,14 +14,14 @@ export default function CGVPage() {
       <h2>1. Objet</h2>
       <p>
         Les présentes conditions générales de vente régissent la souscription
-        aux abonnements payants à l'application FreshFlow, éditée par
-        FreshFlow SAS. Toute souscription implique l'acceptation pleine et
+        aux abonnements payants à l'application Saveo, éditée par
+        Saveo SAS. Toute souscription implique l'acceptation pleine et
         entière des présentes conditions.
       </p>
 
       <h2>2. Offres et tarifs</h2>
       <p>
-        FreshFlow propose trois formules : <strong>Free</strong> (gratuite),
+        Saveo propose trois formules : <strong>Free</strong> (gratuite),
         <strong> Plus</strong> (6,99 € / mois ou 59,99 € / an) et{" "}
         <strong>Family</strong> (11,99 € / mois ou 99,99 € / an). Les tarifs
         s'entendent toutes taxes comprises et peuvent évoluer ; les
@@ -55,7 +55,7 @@ export default function CGVPage() {
       <h2>6. Service client</h2>
       <p>
         Toute question ou réclamation peut être adressée à{" "}
-        <a href="mailto:hello@freshflow.app">hello@freshflow.app</a>. Nous
+        <a href="mailto:hello@saveo.app">hello@saveo.app</a>. Nous
         répondons sous 72 heures ouvrées.
       </p>
 
